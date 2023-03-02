@@ -2,12 +2,11 @@ import Test from "./../components/pages/test.vue";
 import Login from "./../components/pages/auth/Login.vue";
 import Dashboard from "./../components/pages/Dashboard.vue";
 import BaseContainer from "../components/usable/BaseContainer.vue";
-import Masterfile from "./../components/pages/masterfile/Masterfile.vue";
 import Transaction from "./../components/pages/transaction/Transaction.vue";
 import Report from "./../components/pages/report/Report.vue";
-import Item from "./../components/pages/masterfile/components/Item.vue";
-import Customer from "./../components/pages/masterfile/components/Customer.vue";
-import Supplier from "./../components/pages/masterfile/components/Supplier.vue";
+import Item from "./../components/pages/masterfile/Item.vue";
+import Customer from "../components/pages/masterfile/Customer.vue";
+import Supplier from "./../components/pages/masterfile/Supplier.vue";
 
 const routes = [
   {
@@ -32,12 +31,6 @@ const routes = [
         path: "/dashboard",
         name: "dashboard",
         component: Dashboard,
-        meta: { requiresAuth: true },
-      },
-      {
-        path: "/masterfile",
-        name: "masterfile",
-        component: Masterfile,
         meta: { requiresAuth: true },
       },
       {

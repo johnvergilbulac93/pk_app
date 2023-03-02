@@ -36,6 +36,6 @@ class Item extends Model
     ];
     public function packing()
     {
-        return $this->belongsTo(Packing::class, 'itm_code', 'pck_itmcd');
+        return $this->hasMany(Packing::class, 'pck_itmcd', 'itm_code');
     }
 }

@@ -23,13 +23,14 @@ axiosRequest.interceptors.response.use(
   function (response) {
     // Do something with response data
     // console.log(response);
-    //     if (response.status == 201) {
-    //       swal.fire({
-    //         title: "Success",
-    //         text: response.data.message,
-    //         icon: "success",
-    //         confirmButtonText: "OK",
-    //       });
+    if (response.status == 201) {
+      swal.fire({
+        title: "Success",
+        text: response.data.message,
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+    }
     //     } else if (response.status == 202) {
     //       swal.fire({
     //         title: "Success",
